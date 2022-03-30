@@ -4,5 +4,7 @@
 ## Algoritmos:
 * **Sort**
     * [Insertion Sort](sort/insertion-sort/)
+* **Dynamic Programming**
+    * [Fibonacci](dynamic-programming/fibonacci/)
 
 [Voltar ao topo](#algoritmos-em-javascript)
