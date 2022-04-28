@@ -8,6 +8,7 @@
     * [Binary Search](search/binarySearch/)
 * **Sort**
     * [Insertion Sort](sort/insertion-sort/)
+    * [Merge Sort](sort/mergeSort/)
 * **Dynamic Programming**
     * [Fibonacci](dynamic-programming/fibonacci/)
 
