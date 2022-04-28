@@ -1,23 +1,17 @@
-function merge(A, p, q, r) {
-    let left = A.slice(p, q + 1);
-    let right = A.slice(q + 1, r + 1);
-    for (let i = p; left.length || right.length; i++) {
-        if (!right.length || (left[0] <= right[0]))
-            A[i] = left.shift();
-        else
-            A[i] = right.shift();
+function mergeSort(arr) {
+    if (arr.length <= 1)
+        return arr;
+    let result = [];
+    let middle = Math.floor(arr.length / 2)
+    let left = mergeSort(arr.slice(0, middle));
+    let right = mergeSort(arr.slice(middle));
+    while (right.length || left.length) {
+        if (left.length && (left[0] <= right[0] || !right.length))
+            result.push(left.shift());
+        if (right.length && (right[0] < left[0] || !left.length))
+            result.push(right.shift());
     }
-    return A;
-}
-
-function mergeSort(A, p, r) {
-    if (p < r) {
-        let q = Math.floor((p + r) / 2)
-        mergeSort(A, p, q);
-        mergeSort(A, q + 1, r);
-        merge(A, p, q, r);
-    }
-    return A;
+    return result;
 }
 
 exports.mergeSort = mergeSort;
