@@ -5,6 +5,7 @@
 
 * **Search**
     * [Linear Search](search/linearSearch/)
+    * [Binary Search](search/binarySearch/)
 * **Sort**
     * [Insertion Sort](sort/insertion-sort/)
 * **Dynamic Programming**
